@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CURDMVCDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BhaktDetail">
+    <Key>
+      <PropertyRef Name="BhaktId" />
+    </Key>
+    <Property Name="BhaktId" Type="Int32" Nullable="false" />
+    <Property Name="BhaktName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DMV" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MobileNo" Type="Int32" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="CURDMVCDBContet" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BhaktDetails" EntityType="Self.BhaktDetail" />
+  </EntityContainer>
+</Schema>

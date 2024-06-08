@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CURDMVCDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BhaktDetails">
+    <Key>
+      <PropertyRef Name="BhaktId" />
+    </Key>
+    <Property Name="BhaktId" Type="int" Nullable="false" />
+    <Property Name="BhaktName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DMV" Type="nchar" MaxLength="10" />
+    <Property Name="MobileNo" Type="int" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="CURDMVCDBModelStoreContainer">
+    <EntitySet Name="BhaktDetails" EntityType="Self.BhaktDetails" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

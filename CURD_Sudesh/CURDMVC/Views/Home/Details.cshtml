@@ -1,0 +1,50 @@
+﻿@model CURDMVC.BhaktDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BhaktDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BhaktName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BhaktName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DMV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DMV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BhaktId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
