@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Crud_NakshDBModelStoreContainer" CdmEntityContainer="Crud_NakshDBContext">
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="Crud_NakshDBModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentFees" ColumnName="StudentFees" />
+          <ScalarProperty Name="StudentCity" ColumnName="StudentCity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
